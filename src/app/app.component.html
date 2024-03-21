@@ -1,0 +1,34 @@
+<h1 align="center" style="color: blue;">{{ title}}</h1>
+<p> Today is &nbsp;{{ currentDate | date:"MMM dd, yyyy 'at' hh:mm a" }}</p>
+
+
+  
+<table border="1px" style="border-collapse: collapse;">
+<head>
+  <th>ID</th>
+  <th>Name</th>
+  <th>DOB</th>
+  <th>Gender</th>
+  <th>Fees</th>
+</head>
+
+
+  <body bgcolor="lightgreen">
+    <tr>
+    <td >{{students.Id | uppercase}}</td>
+    <td>{{students.Name | titlecase}}</td>
+    <td>{{students.DOB | date:'YYYY-MM-dd'}}</td>
+    <td>{{students.Gender | uppercase}}</td>
+    <td>{{students.Fees | currency:'INR':true}}</td><br>
+  </tr>
+  <tr>
+    <td >{{student.Id | uppercase}}</td>
+    <td>{{student.Name | titlecase}}</td>
+    <td>{{student.DOB | date:'YYYY-MM-dd'}}</td>
+    <td>{{student.Gender | uppercase}}</td>
+    <td>{{student.Fees | currency:'INR':true}}</td><br>
+  </tr>
+  </body>
+
+
+</table>
